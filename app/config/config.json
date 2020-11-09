@@ -1,0 +1,111 @@
+{
+    "development": {
+        "username": "ajith",
+        "password": "password",
+        "database": "server",
+        "host": "localhost",
+        "port": "3306",
+        "dialect": "mysql",
+        "logging": "console.log",
+        "api_root": "api/v1",
+        "social_logins": {
+            "google": {
+                "client_id": "356260766354-15289nl3or7eib7c56ucmh1jsnf5u3gg.apps.googleusercontent.com",
+                "secret": "nfs_1iHCGXwks0BFYu7ZDGNP"
+            },
+            "facebook": {
+                "client_id": "986007105071674",
+                "secret": "43633288bc1664db5294a52943f36e64"
+            }
+        },
+        "sendOtp":{
+            "key":""
+        },
+        "logger": {
+            "level": "debug",
+            "colorize": true
+        },
+        "s3": {
+            "key": "AKIAILSFFESW5KM7V66Q",
+            "secret": "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",
+            "region": "ap-south-1",
+            "bucket": "zoprent-docs"
+        },
+        "mailer": {
+            "b2c":{
+                "host": "http://localhost:3000",
+                "resetLink": "/reset-password",
+                "userVerify": "/verify"
+            },
+            "b2b":{
+                "host": "http://localhost:3000",
+                "resetLink": "/reset-password",
+                "userVerify": "/verify-vendor"
+            }
+        },
+        "vendorSearcher":{
+            "host":"http://localhost:7000",
+            "url":"/api/search.json",
+            "searchDetail":"/api/details",
+            "reindex":"/api/reindex"
+        },
+        "razorPay":{
+            "keyId":"rzp_test_bqGwvZqZyCZlsE",
+            "keySecret":"dUmld4ArtuZ1ERnYXovx8Xd9"
+        }
+    },
+    "test": {
+        "username": "root",
+        "password": null,
+        "database": "database_test",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+    },
+    "production": {
+        "mailer": {
+            "b2c":{
+                "host": "http://159.89.167.67",
+                "resetLink": "/reset-password",
+                "userVerify": "/verify"
+            },
+            "b2b":{
+                "host": "http://159.89.167.67",
+                "resetLink": "/reset-password",
+                "userVerify": "/verify-vendor"
+            }
+        },
+        "username": "root",
+        "password": "zoprent!234",
+        "database": "zoprent",
+        "host": "127.0.0.1",
+        "dialect": "mysql",
+        "api_root": "api/v1",
+        "social_logins": {
+            "google": {
+                "client_id": "356260766354-15289nl3or7eib7c56ucmh1jsnf5u3gg.apps.googleusercontent.com",
+                "secret": "nfs_1iHCGXwks0BFYu7ZDGNP"
+            },
+            "facebook": {
+                "client_id": "986007105071674",
+                "secret": "43633288bc1664db5294a52943f36e64"
+            }
+        },
+        "s3": {
+            "key": "AKIAILSFFESW5KM7V66Q",
+            "secret": "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",
+            "region": "ap-south-1",
+            "bucket": "zoprent-docs"
+        },
+        "vendorSearcher":{
+            "host":"http://localhost:7000",
+            "url":"/api/search.json",
+            "searchDetail":"/api/details",
+            "reindex":"/api/reindex"
+        },
+        "razorPay":{
+            "keyId":"rzp_test_7PrTEjWPOJKcG4",
+            "keySecret":"ewzC9T6mUQhzCOjAA2POaogc",
+            "merchantId":"E8P0m6Cdr8ug7f"
+        }
+    }
+}
